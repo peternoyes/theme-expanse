@@ -45,10 +45,10 @@
       <img src="{{ assets('images/rainbow-bg.png') }}" class="rainbow" />
       <div class="container wide">
         <h1><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
+        <li><a href="/tag/training" class="{{ set_active('/tag/training') }}">Training</a></li>
         {% if pages %}
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
-          <li><a href="/tag/training" class="{{ set_active('/tag/training') }}">Training</a></li>
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
             {% endfor %}
